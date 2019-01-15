@@ -1,0 +1,26 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+		</title>
+		<meta charset='UTF-8'>
+		<link rel='stylesheet' href='css/current-elem.css'>
+	</head>
+	<body>
+		<!-- Change the `data-field` of buttons and `name` of input field's for multiple plus minus buttons-->
+		<p>Количество гостей</p>
+		<div class="input-group" id="input-group1">
+		  <input type="button" value="-" class="button-minus" data-field="quantity">
+		  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+		  <input type="button" value="+" class="button-plus" data-field="quantity">
+		  <div class="message"></div>
+		</div>
+	<!-- <button class="btn" id="btn">Start</button> -->
+
+		<script src="scripts/plusMinusValue.js"></script>
+		<script src="scripts/jquery-3.3.1.min.js"></script>
+		<script>
+			var inputGroup = new InputGroup("#input-group1");
+		</script>
+	</body>
+</html>
